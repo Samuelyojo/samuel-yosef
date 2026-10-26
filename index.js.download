@@ -1,0 +1,1691 @@
+//lesson one variable declaration and data type
+
+// let name = `sami`;
+//  console.log(`My name is ${name}`);
+  
+// let age = `21`;
+//  console.log(`And am ${age} years old`);
+
+//  let online = true;
+//   console.log(`Is sami online: ${online}`);
+
+// let fullName = `Samuel Yosef`;
+// let age = 21;
+// let isStudent = true;
+
+// document.getElementById("p1").textContent = `Your name is ${fullName}`;
+// document.getElementById("p2").textContent = `Your are ${age} years old`;
+// document.getElementById("p3").textContent = `Enrolled: ${isStudent}`;
+
+/***********************************/
+
+//Lesson two Arthimatic opration
+
+// let student = 30;
+
+// student = student ** 2 // ** is power ^ sign
+// student += 1
+// student++
+// student **= 2
+// student %= 2
+
+// console.log(student)
+
+/***********************************/
+
+
+
+//Lesson 3 User input//
+
+// let fullName
+
+    //Easy way
+// fullName = window.prompt(`What your user name?`);
+// console.log(`His fullName is: ${fullName}`);
+
+    //Professional way
+// document.getElementById("mySubmit").onclick = function(){
+//     fullName = document.getElementById("myText").value;
+//     document.getElementById("myH1").textContent = `Hello ${fullName}`
+// }    
+
+/***********************************/
+
+//Lesson 4 Type convertion//
+
+// let age = window.prompt("how old are you?");
+// age = Number(age);
+// age += 1;
+
+// console.log(age, typeof age);
+
+// let x = `pizza`;
+// let y = `pizza`;
+// let z = `pizza`;
+
+// x = Number(x);
+// y = String(y);
+// z = Boolean(z);
+
+// console.log(x, typeof x) // will print Nan(not a number)
+// console.log(y, typeof y)
+// console.log(z, typeof z) 
+
+/***********************************/
+
+//Lesson 5 Constant(const) //
+
+// const PI = 3.14159;
+// let radius;
+// let circumferance;
+
+// radius = window.prompt(`Radius is ?`);
+// radius = Number(radius);
+
+// circumferance = 2 * PI * radius;
+
+// window.alert(`Your circumferance is ${circumferance}`)
+
+// document.getElementById("mySubmit").onclick = function(){
+//     radius = document.getElementById("myText").value;
+//     radius = Number(radius);
+//     circumferance = 2 * PI * radius;
+//     document.getElementById("myH3").textContent = `The circumferance is ${circumferance}`
+// } 
+
+/***********************************/
+
+// Lesson 6 Counter program //
+
+// const decrBtn = document.getElementById("decrBtn");
+// const resetBtn = document.getElementById("resetBtn");
+// const incrBtn = document.getElementById("incrBtn");
+// const countlable = document.getElementById("countLable");
+
+// let count = 0;
+
+// decrBtn.onclick = function(){
+//     count--;
+//     countlable.textContent = count;
+// }
+
+// resetBtn.onclick = function(){
+//     count = 0;
+//     countlable.textContent = count;
+// }
+
+// incrBtn.onclick = function(){
+//     count++
+//     countlable.textContent = count;
+// }
+
+/***********************************/
+
+// Lesson 7 Math class //
+
+// let x = 5.25;
+// let y = 3;
+// let z;
+
+// // z = Math.round(x);
+// // z = Math.floor(x);
+// // z = Math.ceil(x);
+// // z = Math.pow(x,y);
+// // z = Math.sqrt(x);
+// // z = Math.log(x);
+
+// console.log(z);
+
+/***********************************/
+
+// Lesson 8 random number genarater //
+
+// const myLable = document.getElementById("myLable");
+// const myButton = document.getElementById("myButton");
+
+// const min = 1;
+// const max = 100;
+// let randomNum
+
+// myButton.onclick = function(){
+//     randomNum = Math.random() * max;
+//     randomNum = Math.floor(randomNum) + min;
+//     myLable.textContent = randomNum;
+// }
+
+/***********************************/
+
+// Lesson 9 If statement //
+
+// const myAge = document.getElementById("myAge");
+// const mySubmit = document.getElementById("mySubmit");
+// const myH3 = document.getElementById("myH3");
+
+// mySubmit.onclick = function(){
+//     let age = document.getElementById("myAge").value;
+//     if(age >= 70){
+//         myH3.textContent = `You shold not drink any alchol! You are too old to drink.`;
+//     }
+//     else if(age >= 21){
+//         myH3.textContent = `You can drink alchol but don't get too drunk.`;
+//     }
+//     else if(age < 21){
+//         myH3.textContent = `You must not drink any alchol. You are yong for this.`;
+//     }
+//     else if(age == 0){
+//         myH3.textContent = `You can not drink any alchol you are infant.`;
+//     }
+//     else{
+//         myH3.textContent = `Age must be grater than 0.`;
+//     }
+// }
+
+/***********************************/
+
+// Lesson 10 checked property //
+
+// const checkBox = document.getElementById("checkBox");
+// const visaBtn = document.getElementById("visaBtn");
+// const masterBtn = document.getElementById("masterBtn");
+// const paypalBtn = document.getElementById("paypalBtn");
+// const mySubmit = document.getElementById("mySubmit");
+// const p1 = document.getElementById("p1");
+// const p2 = document.getElementById("p2");
+
+// mySubmit.onclick = function(){
+
+//     if(checkBox.checked){
+//         p1.textContent = `You are subscribed :)`;
+//     }
+//     else{
+//         p1.textContent = `You are not subscribed :(`;
+//     }
+
+//     if(visaBtn.checked){
+//          p2.textContent = `You are using visa`;
+//     }
+//     else if (masterBtn.checked){
+//         p2.textContent = `You are using Master card`;
+//     }
+//     else if (paypalBtn.checked){
+//         p2.textContent = `You are using paypal`;
+//     }
+//     else{
+//         p2.textContent = `You must select payment type.`
+//     }
+// }
+
+/***********************************/
+
+// Lesson 11 Ternary oprator //
+
+// let height = 145;
+// console.log(height >= 170 ? `You are tall`:`You are short`);
+
+// let purchaseAmount = 125;
+// let finalAmount = purchaseAmount > 100 ? purchaseAmount-(purchaseAmount * 0.1) : purchaseAmount;
+//  console.log(`Your total amount is ${finalAmount}`);
+
+/***********************************/
+
+// Lesson 12 Switch //
+
+// let day = 22;
+
+// switch(day){
+//     case 1:
+//         console.log(`It is Monday`);
+//         break;
+//     case 2:
+//         console.log(`It is Thuseday`);
+//         break;
+//     case 3:
+//         console.log(`It is Wednesday`);
+//         break;
+//     case 4:
+//         console.log(`It is Thurseday`);
+//         break;
+//     case 5:
+//         console.log(`It is Friday`);
+//         break;
+//     case 6:
+//         console.log(`It is Saturday`);
+//         break;
+//     case 6:
+//         console.log(`It is Sunday`);
+//         break;
+//     default:
+//         console.log(`${day} is not a day in My mind`);
+//         break;                            
+// }
+
+// let grade = 50;
+// let letterGrade;
+
+// switch(true){
+//     case grade >= 92:
+//         letterGrade = "A";
+//         break;
+//     case grade >= 82:
+//         letterGrade = "B";
+//         break;
+//     case grade >= 72:
+//         letterGrade = "C";
+//         break;
+//     case grade >= 62:
+//         letterGrade = "D";
+//         break;
+//     case grade >= 52:
+//         letterGrade = "c";
+//         break;
+//     default:
+//         letterGrade = "F"
+//         break;                            
+// }
+
+// console.log(letterGrade);
+
+/***********************************/
+
+// Lesson 13 String methods //
+
+// let fullName = "samuel's";
+
+// console.log(fullName.charAt(3));
+// console.log(fullName.indexOf("s"));
+// console.log(fullName.lastIndexOf("s"));
+// console.log(fullName.length);
+
+
+/***********************************/
+
+// Lesson 14 String slicing //
+
+// const fullName = "samuel Yosef";
+
+// let firstName = fullName.slice(0,6);
+// let lastName = fullName.slice(7,);
+
+// let firstChar = fullName.slice(0,1);
+// let lastChar = fullName.slice(-1);
+
+// let firstName = fullName.slice(0,fullName.indexOf(" "));
+// let lastName = fullName.slice(fullName.indexOf(" ") + 1,);
+
+// console.log(`First name :${firstName}`);
+// console.log(`Last name :${lastName}`);
+
+// console.log(`First Char :${firstChar}`);
+// console.log(`Last Char :${lastChar}`);
+
+// const email = "Samuel@gmail.com";
+
+// let userName = email.slice(0, email.indexOf("@"));
+
+// console.log(userName);
+
+/***********************************/
+
+// Lesson 15 mathod chaning //
+        
+//   let userName = window.prompt("Enter your user name");
+
+  //no method chaning
+    // userName = userName.trim();
+    // let letter = userName.charAt(0);
+    // letter = letter.toUpperCase();
+    // let extra = userName.slice(1);
+    // extra = extra.toLowerCase();
+    // userName = letter + extra;    
+
+  //with method chaning
+    // userName = userName.trim().charAt(0).toUpperCase() + userName.trim().slice(1).toLowerCase();    
+
+//   console.log(userName);
+
+/***********************************/
+
+// Lesson 16 Logical oprators //
+
+// const temp = 111;
+
+// if(temp > 0 && temp < 30){
+//     console.log(`It is good weather`);
+// }
+// else if(temp < 0 || temp > 30){
+//     console.log(`It is bad weather`);
+// }
+
+// const isSunny = true;
+
+// if(!isSunny){
+//     console.log(`it is sunny day`);
+// }
+// else{
+//     console.log(`it is clowdy day`);
+// }
+
+/***********************************/
+
+// Lesson 17 Strict equal sign ===  and !== //
+
+// const pi = 3.14;
+
+// if(pi === "3.14"){ //this will be false cuz the === also evaluate the data type
+//     console.log(`This is pi`);
+// }
+// else{
+//     console.log(`This is not pi`);
+// }
+
+// if(pi !== "3.14"){ //this will be true cuz the !== also evaluate the data type
+//     console.log(`This is not pi`);
+// }
+// else{
+//     console.log(`This is  pi`);
+// }
+
+/***********************************/
+
+// Lesson 18 while loop //
+
+// let  userName, password;
+// let loggedIn = false;
+
+// while(!loggedIn){
+
+//     userName = window.prompt(`Enter your username`);
+//     password = window.prompt(`Enter your password`);
+
+//     if(userName === `myUserName` && password === `myPassword`){
+//         loggedIn = true;
+//         console.log(`Welcome ${userName}`);
+//     }
+//     else{
+//         console.log(`Invalid cridentional`);
+//     }
+// }
+
+/***********************************/
+
+// Lesson 19 for loop //
+
+// for(let i = 22 ; i > 0 ; i-=2){
+//     if(i == 8){
+//         continue;
+//     }
+//     else if(i == 5){
+//         break;
+//     }
+//     else{
+//         console.log(i);
+//     }
+// }
+
+/***********************************/
+
+
+// Lesson 20 Number gusing game //
+
+// const min = 1;
+// const max = 10;
+// const randomNum = Math.floor(Math.random() * (max - min + 1)) + min;
+
+// let attempts = 0;
+// let guess;
+// let isRunning = true;
+
+// console.log(randomNum);
+
+// while(isRunning){
+
+//     guess = window.prompt(`Guess a number b/n ${min} and ${max}`);
+//     guess = Number(guess);
+
+//     if(isNaN(guess)){
+//         window.alert(`Please enter a  valid number`);
+//     }
+//     else if(guess > max){
+//         window.alert(`That is way pass the limite bro`);
+//     }
+//     else if(guess < min){
+//         window.alert(`That is short of the minimum value bro`);
+//     }else if(guess === randomNum){
+//         window.alert(`Nice guess you got it with ${attempts}`);
+//         isRunning = false;
+//     }
+//     else{
+//         window.alert(`good but not qwite`);
+//     }
+
+//     attempts++
+// }
+
+
+/***********************************/
+
+// Lesson 21 Functions //
+
+// function isEven(number){
+//     if(number % 2 === 0){
+//         return true;
+//     }
+//     return false;
+// }
+
+// function isValidEmail(email){
+    // if(email.includes("@")){
+    //     return true;
+    // }
+    // else{
+    //     return false;
+    // }
+
+    //or use tarnary opration
+//    return email.includes("@") ? true : false;
+// }
+
+// console.log(isEven(3));
+// console.log(isValidEmail("sami@gmail.com"));
+// console.log(isValidEmail("sami.com"));
+
+
+/***********************************/
+
+// Lesson 22 Variable scope //
+
+// let x; // global variable
+
+// function local(){
+//     let x; // local v aariable
+// }
+
+/***********************************/
+
+// Lesson 23 Temprature convertion //
+
+// const textBox = document.getElementById("textBox");
+// const celToFar = document.getElementById("celToFar");
+// const farToCel = document.getElementById("farToCel");
+// const convertBtn = document.getElementById("convertBtn");
+// const result = document.getElementById("result");
+
+// let temp;
+
+// convertBtn.onclick = function(){
+
+//     temp = Number(textBox.value);
+
+//     if(temp == ""){
+//          window.alert("Please enter an input");
+//     }
+//     else if(isNaN(temp)){
+//         window.alert("Please enter valid input");
+//     }
+//     else{
+//         if(celToFar.checked){
+//             temp = (temp * 9/5) + 32;
+//             result.textContent = `Your temp in fahrenheit is :${temp}`;
+//         }
+//         else if(farToCel.checked){
+//             temp = (temp - 32) * 5/9;
+//             result.textContent = `Your temp in celsius is :${temp}`;
+//         }
+//         else{
+//            window.alert("Please select a unit"); 
+//         }
+//     }
+// }
+
+/***********************************/
+
+// Lesson 24 Arrays //
+
+// let fruit = ["banana","orang","apple"];
+
+// fruit.push("coconut");
+// fruit.pop();
+// fruit.unshift("mango"); //same as push but at the begging
+// fruit.shift(); //same as pop but at the begging
+// fruit.sort();
+
+// console.log(fruit);
+
+// for(let x of fruit){
+//     console.log(x);
+// }
+
+/***********************************/
+
+// Lesson 25 Sprad oprater(...) //
+
+//this sprad elements
+
+// let number = [1,2,3,4,5,6];
+// let max = Math.max(...number);
+
+// console.log(max);
+
+// let userName ="samuel";
+// let letter = [...userName].join("_");
+
+// console.log(letter);
+
+
+// let fruit = ["banana","orang","apple"];
+// let vagetables = ["carrots","potato"];
+
+// let food = [...fruit, ...vagetables , "egg" ,"milk"];
+
+// console.log(food)
+
+/***********************************/
+
+// Lesson 26 Rest parameter //
+
+//this colecte elements
+
+// const food1 = "pizza";
+// const food2 = "humberger";
+// const food3 = "sushi";
+
+// function openFridge(...foods){ // ths can accept many arguments
+//     console.log(foods);
+// }
+
+// openFridge(food1,food2,food3); 
+
+// function sum(...numbers){
+
+//     let result = 0;
+//     for(let number of numbers){
+//         result += number;
+//     }
+//     return result;
+// }
+
+// function avg(...numbers){
+
+//     let result = 0;
+//     let count = 0;
+//     for(let number of numbers){
+//         result += number;
+//         count++;
+//     }
+//     return result/count;
+// }
+
+// const total = sum(1,2,3,4,5,6,7,8,9,10);
+// const average = avg(1,2,3,4,5,6,7,8,9,10);
+
+// console.log(`total is ${total}`);
+// console.log(`average is ${average}`);
+
+// function combinStrings(...strings){
+//     return strings.join(" ");
+// }
+
+// let fullName = combinStrings("samuel","Yosef","Tadesse");
+
+// console.log(fullName)
+
+/***********************************/
+
+// Lesson 27 Dice Roller program //
+
+// function rollDice(){
+
+//     const numOfDice = document.getElementById("numOfDice").value;
+//     const diceResult = document.getElementById("diceResult");
+//     const myImages = document.getElementById("myImages");
+//     const values = [];
+//     const images = [];
+
+//     for(let i = 0 ; i < numOfDice ; i++){
+//         const value = Math.floor(Math.random() * 6 ) + 1;
+//         values.push(value);
+//         images.push(`<img src="dice_images/${value}.png" alt="Dice ${value}">`);
+//     }
+
+//     diceResult.textContent = `dice: ${values.join(`, `)}`;
+//     myImages.innerHTML = images.join(``);
+// }
+
+/***********************************/
+
+// Lesson 28 password generator program//
+
+// function generatePassword(passwordLength,includLowercase,includuppercase,includnumbers,includSign){
+
+//     const lowerCaseChars = "abcdefghijklmnopqrstuvwxyz";
+//     const upperCaseChars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+//     const numberChars = "1234567890";
+//     const symbolChars = "!£$%^&*,./";
+//     const length = passwordLength;
+
+//     let allowedChars = ``;
+//     let password = "" ;
+
+//     allowedChars += includLowercase ? lowerCaseChars : "" ;
+//     allowedChars += includuppercase ? upperCaseChars : "" ; 
+//     allowedChars += includnumbers ? numberChars : "" ; 
+//     allowedChars += includSign ? symbolChars : "" ;
+
+//     if(length <= 0){
+//         return `(password lengeth must be at least ${1})`;
+//     }
+//     if(allowedChars.length === 0){
+//         return `(password must contain at least 1 charater be selected)`;
+//     }
+
+//     for(let i = 0 ; i < length ; i++){
+//         const randomIndex = Math.floor(Math.random() * allowedChars.length);
+//         password += allowedChars[randomIndex];
+//     }
+
+//     return password;
+// }
+
+// const passwordLength = 8;
+// const includLowercase = true;
+// const includuppercase = true;
+// const includnumbers = true;
+// const includSign = false;
+
+// const password = generatePassword(passwordLength,
+//                                   includLowercase,
+//                                   includuppercase,
+//                                   includnumbers,
+//                                   includSign);
+
+//    console.log (`Generated password: ${password}`);                               
+
+/***********************************/
+
+// Lesson 29 callbacks//
+
+// function sum(callback, x, y){
+//     let result = x + y;
+//     callback(result);
+// }
+
+// function displayResult(result){
+//     console.log(result);
+// }
+
+// function displayOnPage(result){
+//     document.getElementById("myh1").textContent = result;
+// }
+
+// sum(displayResult, 34 , 22);
+// sum(displayOnPage, 34 , 22);
+
+/***********************************/
+
+// Lesson 30 foreach() //
+
+// let number = [1,2,3,5,4,60];
+
+// number.forEach(squar);
+// number.forEach(double);
+// number.forEach(display);
+
+// function double(element, index, array){
+//     array[index] = element * 2;
+// }
+
+// function triple(element, index, array){
+//     array[index] = element * 3;
+// }
+
+// function squar(element, index, array){
+//     array[index] = element ** 2;
+// }
+
+// function display(element){
+//     console.log(element);
+// }
+
+// let friuts = ["banana","coconut","oraing","apple"];
+
+// friuts.forEach(captitalize);
+// friuts.forEach(display)
+
+// function uppercase(element, index , array){
+//     array[index] = element.toUpperCase();
+// }
+
+// function lowercase(element, index , array){
+//     array[index] = element.toLowerCase();
+// }
+
+// function captitalize(element, index , array){
+//     array[index] = element.charAt(0).toUpperCase() + element.slice(1).toLowerCase();
+// }
+
+//  function display(element){
+//     console.log(element);
+// }
+
+/***********************************/
+
+// Lesson 31 map() //
+    //create new array to store the altered data
+
+// let number = [1,2,3,4,5];
+
+// let squareResult = number.map(square);
+// let cubeResult = number.map(cube);
+
+// console.log(cubeResult);
+
+// function square(element){
+//     return Math.pow(element,2);
+// }
+// function cube(element){
+//     return Math.pow(element,3);
+// }
+
+// const dates = ["2018-2-29","2016-13-30","2019-1-18"];
+// const formatedDates = dates.map(formate);
+
+// console.log(formatedDates)
+
+// function formate(elemnt){
+//     const part = elemnt.split("-");
+//     return `${part[1]}/${part[2]}/${part[0]}`
+// }
+
+/***********************************/
+
+// Lesson 32 filter() //
+    //filter out any element that make the callback true and store it in new array
+
+// let numbers = [1,2,3,4,5,6,7,8,,9,10];
+// let evenNumbers = numbers.filter(isEven);
+// let oddNumbers = numbers.filter(isOdd);
+
+// console.log(evenNumbers);
+// console.log(oddNumbers);
+
+// function isEven(element){
+//     return element%2 === 0;
+// }
+// function isOdd(element){
+//     return element%2 !== 0;
+// }
+
+// const ages = [16,14,23,21,22,49];
+// const adult = ages.filter(isAdult);
+// const children = ages.filter(isChild);
+
+// console.log(adult);
+// console.log(children);
+
+// function isAdult(element){
+//     return element >= 18;
+// }
+// function isChild(element){
+//     return element < 18;
+// }
+
+
+/***********************************/
+
+// Lesson 33 reduce() //
+        //reduce the elemnt of an array to single value
+
+// const prices = [12,3,52,7,12];
+
+// const total = prices.reduce(sum);
+// console.log(total)
+
+// function sum(accumulator,element){
+//     return accumulator + element;
+// }
+// function sum(privios,next){
+//     return privios + next;    OR this
+// }
+
+// const greads = [20,43,56,90,12];
+
+// const maxValue = greads.reduce(getMax);
+// const minValue = greads.reduce(getMin);
+
+// console.log(maxValue);
+// console.log(minValue);
+
+// function getMax(accumulator,element){
+//     return Math.max(accumulator,element);
+// }
+// function getMin(accumulator,element){
+//    return Math.min(accumulator,element);
+// }
+
+/***********************************/
+
+// Lesson 34 function exprestion //
+
+// const numbers = [1,2,3,4,5,6,7,8,9];
+
+// const square = numbers.map(function (element){
+//         return Math.pow(element,2);
+// })
+
+// const odd = numbers.filter(function(element){
+//     return element % 2 === 0
+// })
+
+// console.log(square);
+// console.log(odd);
+
+/***********************************/
+
+// Lesson 35 Arrow function //
+
+// const hello = (name) => console.log(`Hello ${name}`);
+// hello("Sami");
+
+// setTimeout(() => console.log("HELLO"), 2000);
+
+// const numbers = [1,2,3,4,5,6];
+
+// const squars = numbers.map((element) => Math.pow(element, 2));
+// const cube = numbers.map((element) => Math.pow(element, 3));
+// const odd = numbers.filter((element) => element % 2 === 0);
+// const total = numbers.reduce((accumulator,element) => accumulator + element);
+
+// console.log(squars);
+// console.log(cube);
+// console.log(odd);
+// console.log(total);
+
+/***********************************/
+
+// Lesson 36 Objects //
+
+// const person1 = {
+//     firstName: "Samuel",
+//     lastName: "Yosef",
+//     sayHello: () => console.log("Hello"),
+//     sayBye: () => console.log("good bye")
+// }
+// const person2 = {
+//     firstName: "ME",
+//     lastName: "Again",
+//     sayHello: () => console.log("Hello"),
+//     sayBye: () => console.log("good bye")
+// }
+
+// console.log(person1.firstName);
+// console.log(person1.lastName);
+// person1.sayHello();
+// person1.sayBye();
+
+// console.log(person2.firstName);
+// console.log(person2.lastName);
+// person2.sayHello();
+// person2.sayBye();
+
+/***********************************/
+
+// Lesson 37 THIS //
+
+// const person1 = {
+//     firstName: "Samuel",
+//     // sayHello: () => console.log(`Hello ${this.firstName}`), does not work on arrow function
+//     sayHello: function () {
+//         console.log(`Hello ${this.firstName}`)
+//     },
+    
+// }
+
+// person1.sayHello();
+
+/***********************************/
+
+
+// Lesson 38 constructor //
+
+// function car(make,model){
+//     this.make = make;
+//     this.model = model;
+//     this.drive = function (){console.log(`your are driving ${this.model}`)};
+// }
+
+// const car1 = new car("Ford","Mustang");
+// const car2 = new car("Doge","charger");
+
+// console.log(car1.make);
+// console.log(car1.model);
+// car1.drive();
+
+// console.log(car2.make);
+// console.log(car2.model);
+// car2.drive();
+
+/***********************************/
+
+
+// Lesson 39 Class //
+
+// class products {
+//     constructor(name, price){
+//         this.name = name;
+//         this.price = price;
+//     }
+
+//     displayProduct(){
+//         console.log(`Product :${this.name}`);
+//         console.log(`price :${this.price.toFixed(2)}`);
+//     }
+
+//     incluedTax(salesTax){
+//         const withTax = this.price + (this.price * salesTax);
+//         console.log(`price with tax is : ${withTax}`);
+//     }
+// }
+
+// const salesTax = 0.1;
+
+// const product1 = new products(`Shirt`, 150)
+// product1.displayProduct();
+// product1.incluedTax(salesTax);
+
+
+// const product2 = new products(`traouther`, 290.55)
+// product2.displayProduct();
+// product2.incluedTax(salesTax);
+
+/***********************************/
+
+// Lesson 40 Static keyword //
+
+// class MathUtil{
+//     static PI = 3.14149;
+
+//     static getArea(radius){
+//         return this.PI * (radius ** 2);
+//     }
+// }
+
+// const mathUtil1 = new MathUtil();
+// mathUtil1.PI;
+        //or simpley
+// console.log(MathUtil.PI);
+// console.log(MathUtil.getArea(12));
+
+// class user{
+
+//     static userCount = 0;
+
+//     constructor(userName){
+//         this.userName = userName;
+//         user.userCount++;
+//     }
+// }
+
+// const user1 = new user("sami");
+// const user2 = new user("sami2");
+// const user3 = new user("sami3");
+
+// console.log(user.userCount);
+
+/***********************************/
+
+// Lesson 41 inheritance //
+
+// class Animal{
+//     alive = true;
+
+//     eat(){
+//         console.log(`this ${this.name} is eating`);
+//     }
+//     sleep(){
+//         console.log(`this ${this.name} is sleeping`);
+//     }
+// }
+
+// class Rabite extends Animal{
+//     name = "Rabite";
+
+//     run(){
+//         console.log(`This ${this.name} is running`)
+//     }
+// }
+// class Cat extends Animal{
+//     name = "Cat";
+
+//     run(){
+//         console.log(`This ${this.name} is running`)
+//     }
+// }
+// class Hoke extends Animal{
+//     name = "hoke";
+
+//     fly(){
+//         console.log(`This ${this.name} is flying`)
+//     }
+// }
+
+// const cat = new Cat();
+// console.log(cat.alive);
+// cat.eat();
+// cat.sleep();
+// cat.run();
+
+// const hoke = new Hoke();
+// console.log(hoke.alive);
+// hoke.eat();
+// hoke.sleep();
+// hoke.fly();
+
+// const rabit = new Rabite();
+// console.log(rabit.alive);
+// rabit.eat();
+// rabit.sleep();
+// rabit.run();
+
+/***********************************/
+
+// Lesson 42 Super keyword //
+
+// class Animal{
+    
+//     constructor(name,age){
+//         this.name = name;
+//         this.age = age;
+//     }
+//     move(speed){
+//         console.log(`The ${this.name} has speed of ${speed}Km/Hr`)
+//     }
+// }
+
+// class Rabite extends Animal{
+   
+//     constructor(name,age,runSpeed){
+//         super(name,age);
+//         this.runSpeed = runSpeed;
+//     }
+//     run(){
+//         super.move(this.runSpeed);
+//     }
+// }
+// class Cat extends Animal{
+   
+//       constructor(name,age,runSpeed){
+//         super(name,age);
+//         this.runSpeed = runSpeed;
+//     }
+//     run(){
+//         super.move(this.runSpeed);
+//     }
+// }
+// class Hoke extends Animal{
+    
+//       constructor(name,age,flySpeed){
+//         super(name,age);
+//         this.flySpeed = flySpeed;
+//     }
+//     fly(){
+//         super.move(this.flySpeed);
+//     }
+// }
+
+// const rabit = new Rabite("rabit",4,25);
+// const cat = new Cat("cat",8,12);
+// const hoke = new Hoke("hoke",12,40);
+
+// console.log(rabit.name);
+// console.log(rabit.age);
+// rabit.run();
+
+// console.log(hoke.name);
+// console.log(hoke.age);
+// hoke.fly();
+
+
+/***********************************/
+
+// Lesson 43 Getters and Setters //
+
+// class rectangel{
+//     constructor(width, height){
+//         this.height = height;
+//         this.width = width;
+//     }
+
+//     set width(newWidth){
+//         if(newWidth > 0){
+//         this._width = newWidth;
+//         }
+//         else{
+//             console.error("Width must be postive number.")
+//         }
+//     }
+//     set height(newHeight){
+//         if(newHeight > 0){
+//           this._height = newHeight;
+//         }
+//         else{
+//             console.error("Heigth must be postive number.");
+//         }
+
+//     }
+
+//     get width(){
+//         return `${this._width}cm`;
+//     }
+//     get height(){
+//         return `${this._height}cm`;
+//     }
+//     get area(){
+//         return `${this._height * this._width} cm^2`;
+//     }
+// }
+
+// const rectangle = new rectangel(5,4);
+
+// console.log(rectangle.width);
+// console.log(rectangle.height);
+// // console.log(rectangle.area);
+
+// class person{
+//     constructor(firstName,lastName,age){
+//         this.age = age;
+//         this.firstName = firstName;
+//         this.lastName = lastName;
+//     }
+
+//     set firstName(newFirstName){
+//         if(typeof newFirstName === "string" && newFirstName.length > 0){
+//             this._firstName = newFirstName;
+//         }
+//         else{
+//            console.error("First name must be non-empty string."); 
+//         }
+//     }
+//     set lastName(newLastName){
+//         if(typeof newLastName === "string" && newLastName.length > 0){
+//             this._lastName = newLastName;
+//         }
+//         else{
+//            console.error("Last name must be non-empty string."); 
+//         }
+//     }
+//     set age(newAge){
+//         if(typeof newAge === "number" && newAge > 0){
+//             this._age = newAge;
+//         }
+//         else{
+//            console.error("Age must be grater than zero."); 
+//         }
+//     }
+
+//     get firstName(){
+//         return this._firstName;
+//     }
+//     get lastName(){
+//         return this._lastName;
+//     }
+//     get fullName(){
+//         return this._firstName +" "+ this._lastName;
+//     }
+//     get age(){
+//         return this._age;
+//     }
+// }
+
+// const person1 = new person("Samuel","Yosef",21);
+
+// console.log(person1.fullName);
+// console.log(person1.age);
+
+/***********************************/
+
+// Lesson 44 Destructuring //
+
+//------------Example-1--------------//
+// to swapw the value of two var
+
+// let a = 1;
+// let b = 2;
+
+// [a,b] = [b,a];
+
+// console.log(a);
+// console.log(b);
+
+//------------Example-2--------------//
+//swap 2 element in an array
+
+// const color = ["red","green","blue","white","black"];
+
+// [color[1],color[4]] = [color[4],color[1]] 
+
+// console.log(color);
+
+//------------Example-3--------------//
+//Assign array element to variable
+
+// const color = ["red","green","blue","white","black"];
+
+// const [first,second,threed,...extraColors] = color
+
+//  console.log(first);
+//  console.log(second);
+//  console.log(threed);
+//  console.log(extraColors);
+
+//------------Example-4--------------//
+//extract value from object
+
+// const person1 ={
+//     firstName: "samuel",
+//     lastName: "yosef",
+//     age: 21,
+// }
+// const person2 ={
+//     firstName: "ME",
+//     lastName: "AGAIN",
+//     age: 21,
+//     job: "student"
+// }
+
+// const {firstName,lastName,age,job="unemployed"} = person2;
+
+// console.log(firstName);
+// console.log(lastName);
+// console.log(age);
+// console.log(job);
+
+//------------Example-5--------------//
+//in function parameter
+
+// function displayPerson({firstName,lastName,age,job="unemployed"}){
+//     console.log(firstName);
+//     console.log(lastName);
+//     console.log(age);
+//     console.log(job);
+// }
+
+//  const person1 ={
+//     firstName: "samuel",
+//     lastName: "yosef",
+//     age: 21,
+// }
+// const person2 ={
+//     firstName: "ME",
+//     lastName: "AGAIN",
+//     age: 21,
+//     job: "student"
+// }
+
+// displayPerson(person1);
+// displayPerson(person2);
+
+/***********************************/
+
+// Lesson 45 Nested object //
+
+// const person1 = {
+//     fullName: "Samuel Yosef",
+//     age: 21,
+//     isStudent: true,
+//     addres: {
+//         contry: "Ethiopia",
+//         city: "Not a chance",
+//         streat: "we Don't have it"
+//     }
+// }
+
+// console.log(person1.fullName);
+// console.log(person1.age);
+// console.log(person1.isStudent);
+// console.log(person1.addres.city);
+// console.log(person1.addres.contry);
+// console.log(person1.addres.streat);
+
+// for(const pro in person1.addres){
+//     console.log(person1.addres[pro])
+// }
+
+// class Addres{
+//     constructor(streat,city,country){
+//         this.streat = streat;
+//         this.city = city;
+//         this.country = country;
+//     }
+// }
+
+// class person{
+//     constructor(name,age,...addres){
+//         this.name = name;
+//         this.age = age;
+//         this.addres = new Addres(...addres);
+//     }
+// }
+
+// const person1 = new person("samuel",21,
+//                                     "streat",
+//                                     "city",
+//                                     "country");
+// const person2 = new person("ME again",21,
+//                                     "streat",
+//                                     "city",
+//                                     "country");
+
+// for(const pro in person1){
+//     console.log(person1[pro])
+// }
+// for(const pro in person1.addres){
+//     console.log(person1.addres[pro])
+// }
+
+// for(const pro in person2){
+//     console.log(person2[pro])
+// }
+// for(const pro in person2.addres){
+//     console.log(person2.addres[pro])
+// }
+
+
+/***********************************/
+
+// Lesson 46 Array of object//
+
+// const fruits = [{name:"apple",color:"red"},
+//                 {name:"orange",color:"orange"},
+//                 {name:"banana",color:"yellow"},
+                // {name:"pinapple",color:"yellow"}]
+
+// fruits.forEach((fruits) => console.log(fruits.name))
+// fruits.forEach((fruits) => console.log(fruits.color))
+
+// const fruitsColors = fruits.map((fruits) => fruits.color);
+// console.log(fruitsColors);
+
+// const yellowFruits = fruits.filter(fruits => fruits.color === "yellow");
+// console.log(yellowFruits)
+
+/***********************************/
+
+
+// Lesson 47 sort method//
+
+// let numbers = [1,8,3,5,4,2,6,10,9,7];
+
+// numbers.sort((a,b) => a-b);
+// console.log(numbers)
+
+// const students = [{name:"ami", age:21, GPA: 3.42},
+//                 {name:"samuel", age:26, GPA: 3.67},
+//                 {name:"me", age:22, GPA: 3.56},
+//                 {name:"be Me again", age:20, GPA: 3.97}]
+
+// students.sort((a,b) => a.GPA - b.GPA);//for numbers
+// students.sort((a,b) => a.name.localeCompare(b.name))
+
+// console.log(students)
+
+/***********************************/
+
+// Lesson 48 Shuffle an array//
+
+// const cards = ['A',1,2,3,4,5,6,7,8,9,10,'J','Q','K'];
+
+// function shuffle(array){
+//     for(let i = array.length - 1; i > 0 ; i--){
+//         const random = Math.floor(Math.random() * (i+1));
+
+//         [array[i],array[random]] = [array[random],array[i]];
+//     }
+// }
+
+// shuffle(cards);
+// console.log(cards)
+
+/***********************************/
+
+// Lesson 49 Date object//
+
+// const date = new Date();
+// const year = date.getFullYear()
+// const month = date.getMonth()
+// const dayOfWeek = date.getDay()
+// const day = date.getDate()
+
+// date.setDate(2);
+// date.setMonth(9);
+// date.setHours(12)
+
+// console.log(date)
+// console.log(year)
+// console.log(month)
+// console.log(day)
+// console.log(dayOfWeek)
+
+/***********************************/
+
+
+// Lesson 50 Closures//
+
+// function creatCounter(){
+//     let count = 0;
+
+//     function incre(){
+//     count++;
+//     console.log(count)
+// }
+
+//     function getCount(){
+//         return count;
+//     }
+
+// return {incre,getCount};
+// }
+
+// const counter = creatCounter();
+
+// counter.incre();
+// counter.incre();
+// counter.incre();
+// counter.incre();
+
+// console.log(`count is: ${counter.getCount()}`);
+
+// function createGame(){
+//     let score = 0;
+
+//     function increScore(point){
+//         score += point;
+//         console.log(`+ ${point}pts`);
+//     }
+//     function decreScore(point){
+//         score -= point;
+//         console.log(`- ${point}pts`);
+//     }
+//     function displayScore(){
+//         return score;
+//     }
+
+// return{increScore,decreScore,displayScore}
+// }
+
+// const score1 = createGame();
+// console.log(score1.displayScore());
+// score1.increScore(10);
+// score1.decreScore(58);
+// console.log(score1.displayScore());
+
+/***********************************/
+
+// Lesson 51 setTimeout() //
+
+// let timeOutId;
+// function startTimer(){
+//    timeOutId = setTimeout(() => window.alert("Hello"),2000);
+//     console.log("Started")
+// }
+
+// function endTimer(){
+//     clearTimeout(timeOutId);
+//     console.log("Ended")
+// }
+
+/***********************************/
+
+// Lesson 52 Digital clock program//
+
+// function updateClock(){
+
+//     const now = new Date();
+//     let hours = now.getHours().toString().padStart(2,0);
+//     const meridium = hours >= 12 ? "PM" : "AM";
+//     hours = hours % 12 || 12 ; // change to 12 hour clock
+//     hours = hours.toString().padStart(2,0)
+//     const minuts = now.getMinutes().toString().padStart(2,0);
+//     const seconds = now.getSeconds().toString().padStart(2,0);
+//     const timeString = `${hours}:${minuts}:${seconds} ${meridium}`;
+//     document.getElementById("clock").textContent = timeString;
+// }
+
+// updateClock();
+// setInterval(updateClock, 1000);
+
+/***********************************/
+
+
+// Lesson 53 Stopwatch programe//
+
+// const clock = document.getElementById("clock");
+// let timer = null;
+// let startTime = 0;
+// let elapsedTime = 0;
+// let isRunning = false;
+
+// function start(){
+    
+//     if(!isRunning){
+//         startTime = Date.now() - elapsedTime;
+//         timer = setInterval(update, 10);
+//         isRunning = true;
+//     }
+// }
+
+// function stop(){
+    
+//      if(isRunning){
+//        clearInterval(timer);
+//        elapsedTime = Date.now() - startTime;
+//        isRunning = false;
+//     }
+// }
+
+// function reset(){
+//     clearInterval(timer);
+//     startTime = 0;
+//     elapsedTime = 0;
+//     isRunning = false;
+//     clock.textContent = "00:00:00:00";
+// }
+
+// function update(){
+//     const currentTime = Date.now();
+//     elapsedTime = currentTime - startTime;
+
+//     let hours = Math.floor(elapsedTime / (1000 * 60 * 60));
+//     let minuts = Math.floor(elapsedTime / (1000 * 60) % 60);
+//     let seconds = Math.floor(elapsedTime / 1000 % 60);
+//     let milisecons = Math.floor((elapsedTime % 1000) / 10) ;
+
+//     hours = String(hours).padStart(2,"0");
+//     minuts = String(minuts).padStart(2,"0");
+//     seconds = String(seconds).padStart(2,"0");
+//     milisecons = String(milisecons).padStart(2,"0");
+
+//     clock.textContent = `${hours}:${minuts}:${seconds}:${milisecons}`
+// }
+
+/***********************************/
+
+// Lesson 54 ES6 Modules//
+
+// import {PI,getCircumferance,getArea,getVolume} from './MathUtil.js';
+
+// console.log(PI);
+// const circumference = getCircumferance(10);
+// console.log(circumference)
+// const area = getArea(10);
+// console.log(area)
+
+/***********************************/
+
+// Lesson 55 Asynchronous code//
+
+// function func1(callback){
+//     setTimeout(() => {console.log("Task 1")
+//                       callback()},3000)
+// }
+// function func2(){
+//     console.log("Task 2")
+//     console.log("Task 3")
+// }
+
+// func1(func2);
+/***********************************/
+
+// Lesson 56 Error obj and handling //
+
+// try{
+//     console.logd("hello");
+// }
+// catch(error){
+//     console.error(error)
+// }
+// finally{
+//     console.log("you reach the end");
+// }
+
+// try{
+//     const dividend = window.prompt("Enter a dividend: ");
+//     const divisor = window.prompt("Enter a divisor: ");
+
+//     if(divisor == 0){
+//         throw new Error("You can't divide by zero")
+//     }
+//     if(isNaN(dividend) || isNaN(divisor)){
+//         throw new Error("Values must be a number")
+//     }
+
+// const result = dividend/divisor;
+// console.log(result)
+// }
+// catch(error){
+//     console.error(error)
+// }
+
+// console.log("THE END")
+/***********************************/
+
+// Lesson 57 Calculator Program //
+
+const display = document.getElementById("display");
+
+function appenToDisplay(input){
+    display.value += input;
+}
+
+function calculate(){
+    try{
+        display.value = eval(display.value)
+    }catch(error){
+        display.value = "Error";
+    }
+}
+
+function clearDispaly(){
+    display.value ="";
+}
+
+/***********************************/

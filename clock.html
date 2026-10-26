@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<!-- saved from url=(0032)http://127.0.0.1:5500/index.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./clock_files/style.css">
+</head>
+<body>
+<!--  Lesson on user input   
+    <h1 id="myH1">Welocome</h1>
+
+    <label>UserName</label>
+    <input type="text" id="myText"><br>
+    <button id="mySubmit">Submit</button>
+ -->
+
+ <!--  Lesson on constant(const)   
+    <h3 id="myH1">Enter radius</h3>
+
+    <label>Radius</label>
+    <input id="myText"><br><br>
+    <button id="mySubmit">Submit</button> <br>
+    <h3 id="myH3"></h3>
+-->
+
+<!-- Counter program
+    <label id="countlabel">0</label><br>
+    <div>
+        <button id="decrBtn" class="button">Decreas</button>
+        <button id="resetBtn" class="button">Reset</button>
+        <button id="incrBtn" class="button">Increase</button>
+    </div>
+-->
+
+<!-- Random number genarator
+     <h1 id="myh1">Randome Number generator</h1>
+     <label id="mylabel"></label><br><br>
+     <button id="myButton">Genrate</button>
+-->
+
+<!--  If statment
+    <h1 id="myH1">Enter your age</h1>
+
+    <label>Age</label>
+    <input id="myAge"><br><br>
+    <button id="mySubmit">Submit</button> <br>
+    <h3 id="myH3"></h3>
+ -->
+
+ <!--    checked property
+     <input type="checkbox" id="checkBox">
+    <label for="checkBox">Subscribe</label> <br><br>
+
+    <input type="radio" id="visaBtn" name="payment">
+    <label for="visaBtn">Visa</label><br>
+    <input type="radio" id="masterBtn" name="payment">
+    <label for="masterBtn">Master card</label><br>
+    <input type="radio" id="paypalBtn" name="payment">
+    <label for="paypalBtn">Paypal</label><br><br>
+
+    <button id="mySubmit">Submit</button> <br>
+
+    <p id="p1"></p>
+    <p id="p2"></p> 
+-->
+
+<!--  Tempratur Convertion
+    <div id="container">
+        <h1>Temptature <br>convertion;</h1>
+
+    <input type="text" id="textBox" ><br><br>
+
+    <input type="radio" id="celToFar" name="convertion">
+    <label for="celToFar">Celsius to farhanite</label><br>
+
+    <input type="radio" id="farToCel" name="convertion">
+    <label for="farToCel">Farhanite to celsius</label><br><br>
+
+    <button id="convertBtn">convert</button><br>
+
+    <h3 id="result"></h3>
+    </div>
+ -->
+
+<!-- Dice Roller program 
+    <div id="container">
+        <h1 id="myh1">Dice Roller</h1>
+
+        <label># of dice:</label>
+        <input type="number" value="1" min="1" id="numOfDice">
+        <button id="myBtn" onclick="rollDice()">Roll Dice</button>
+
+        <div id="diceResult">dice: all</div>
+
+        <div id="myImages"></div>
+
+    </div>
+-->
+
+    <!-- <h1 id="myh1"></h1>callback -->
+
+    <!-- <button onclick="startTimer()">Start</button>
+    <button onclick="endTimer()">End</button> -->
+
+
+    <div id="clock-container">
+        <div id="clock">11:05:17 PM</div>
+    </div>
+
+
+    <script src="./clock_files/index.js.download"></script>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+</body></html>
